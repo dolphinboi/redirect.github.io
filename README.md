@@ -1,2 +1,10 @@
-<a href="bit.ly/infmapi" target=_self title="heehee">
-</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Button Link </title>title
+</head>
+<body>
+<button onclick="document.location='bit.ly/infmapi'" >heehee</button>button>
+
+</body>
+</html>
