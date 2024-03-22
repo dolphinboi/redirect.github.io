@@ -16,23 +16,21 @@
 <body>
 
 <script>
-// Prompt the user for username
-var username = prompt("Please enter your username:");
+// Predefined username
+var username = "Evyn";
 
 // Check if the username is correct
-if (username === "Evyn") {
-  var password = prompt("Please enter your password:");
+var password = prompt("Please enter your password:");
   
-  // Check password if username is correct
-  if (password === "Zhao") {
-    // Redirect to another website
-    window.location.href = "index2.html";
-  } else {
-    // Close the tab if password is incorrect and redirect to another link
-  window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
-  }
+// Define the correct passcode
+var correctPasscode = String.fromCharCode(64, 36, 58, 56, 59);
+  
+// Check password if username is correct
+if (password === correctPasscode) {
+  // Redirect to another website
+  window.location.href = "index2.html";
 } else {
-  // Close the tab if username is incorrect and redirect to another link
+  // Close the tab if password is incorrect and redirect to another link
   window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
 }
 </script>
