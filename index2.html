@@ -10,10 +10,10 @@
   window.onload = function() {
     // This function will run once the entire page has loaded
     alert("Pluh");
-    document.documentElement.requestFullscreen();
     var userName = prompt("Please enter your name:", "Enter Name Here🐬");
     if (userName !== null && userName !== "") {
       alert("Hello, " + userName + "!");
+      document.documentElement.requestFullscreen();
     } else {
       alert("It's not that hard, just enter a name, pluh.");
       window.location.reload();
