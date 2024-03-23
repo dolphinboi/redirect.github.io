@@ -19,11 +19,18 @@
 // Define the correct username and password
 var correctUsername = String.fromCharCode(69, 118, 121, 110);
 var correctPassword = String.fromCharCode(90, 104, 97, 111);
+
+// Prompt the user for password
 var password = prompt("Please enter your password:");
+
+// Check if the entered password matches the correct password
 if (password === correctPassword) {
+  // Redirect to another website if the password is correct
   window.location.href = "index2.html";
 } else {
-  window.close();
+  // Close the current tab and redirect to another link if the password is incorrect
+  window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
+  window.close(); // Close the current tab
 }
 </script>
 
