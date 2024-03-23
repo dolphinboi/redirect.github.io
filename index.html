@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,18 +14,28 @@
 </style>
 </head>
 <body>
+
 <script>
-// Define the correct username and password
-var correctUsername = String.fromCharCode(69, 118, 121, 110);
-var correctPassword = String.fromCharCode(90, 104, 97, 111);
-var password = prompt("Please enter your password:");
-if (password === correctPassword) {
-  window.location.href = "index2.html";
-} else {
+// Prompt the user for username
+var username = prompt("Please enter your username:");
+
+// Check if the username is correct
+if (username === "Evyn") {
+  var password = prompt("Please enter your password:");
+  
+  // Check password if username is correct
+  if (password === "Zhao") {
+    // Redirect to another website
+    window.location.href = "index2.html";
+  } else {
+    // Close the tab if password is incorrect and redirect to another link
   window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
-  window.close();
+  }
+} else {
+  // Close the tab if username is incorrect and redirect to another link
+  window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
 }
 </script>
 
 </body>
-</html>
+</html>"
