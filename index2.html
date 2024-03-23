@@ -1,1 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluh</title>
+</head>
+<body>
+<script>
+  window.onload = function() {
+    // This function will run once the entire page has loaded
+    alert("Pluh");
+    var userName = prompt("Please enter your name:", "pluh");
+    if (userName !== null && userName !== "") {
+      alert("Hello, " + userName + "!");
+    } else {
+      alert("It's not that hard, just enter a name, pluh.");
+      window.location.reload();
+    }
+  };
+</script>
+<h1>PLUH</h1>
+<p>pluh.</p>
+</body>
+</html>
