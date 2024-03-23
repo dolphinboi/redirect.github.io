@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 <html>
-<title> Pluh </title>
+Pluh
 </html>
