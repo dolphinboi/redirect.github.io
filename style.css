@@ -1,6 +1,10 @@
-.icon{
-  text-align: center;
+.icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adjust this value to add space from the top and left edges */
 }
+
 h1 {
   color: navy;
   text-align: center;
