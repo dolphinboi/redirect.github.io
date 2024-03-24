@@ -7,9 +7,22 @@ h1 {
   text-align: center;
 }
 
-button {
-  font-size: 25px;
-  background-color: grey;
-  color: lightblue;
-  border-radius: 25px;
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: var(--clr-accent);
+  background-color: var(--clr-rgba);
+  border: 10px solid var(--cls-accent); /* Typo: should be var(--clr-accent) */
+  border-radius: 5px;
+
+  /* Corrected transition properties */
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
 }
