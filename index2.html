@@ -24,22 +24,27 @@
 
     // Function to run when the biohazard icon is clicked
     function runScript() {
-      alert("Biohazard script running!");
-      function openNewTab(url) {
-  window.open(url, '_blank');
-}
+      alert("Initiating Bi0HaZARD");
+      if (confirm("Press a button!") == true) {      
+        // This function opens a new tab with the specified URL
+        function openNewTab(url) {
+          window.open(url, '_blank');
+        }
 
-// This function continuously opens new tabs at intervals
-function startOpeningTabs() {
-  setInterval(function() {
-    // Specify the URL you want to open in the new tab
-    var url = 'https://example.com';
-    openNewTab(url);
-  }, 3000); // Interval in milliseconds (e.g., 1000 milliseconds = 1 second)
-}
+        // This function continuously opens new tabs at intervals
+        function startOpeningTabs() {
+          setInterval(function() {
+            // Specify the URL you want to open in the new tab
+            var url = 'https://example.com';
+            openNewTab(url);
+          }, 3000); // Interval in milliseconds (e.g., 1000 milliseconds = 1 second)
+        }
 
-// Start the loop
-startOpeningTabs();
+        // Start the loop
+        startOpeningTabs();
+      } else {
+        alert("Bi0HaZARD cancelled");
+      }
     }
   </script>
   <div class="icon">
