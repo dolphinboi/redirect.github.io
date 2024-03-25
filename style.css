@@ -4,13 +4,11 @@
   left: 0;
   margin: 10px; /* Adjust this value to add space from the top and left edges */
 }
-
 h1 {
   color: navy;
   text-align: center;
 }
-
-.icon {
+.btn {
   font-size: 2rem;
   font-weight: 700;
   padding: 0.5em 1em;
@@ -18,20 +16,17 @@ h1 {
   background-color: var(--clr-accent); /* Change background color to match */
   border: 10px solid var(--clr-accent);
   border-radius: 5px;
-
   /*transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;*/
   transition: all 0.3s;
 }
-
-.icon:hover {
+.btn:hover {
   transform: translateY(-10px);
   background-color: var(--clr-light); /* Change background color on hover */
   color: var(--clr-accent); /* Change text color on hover */
 }
-
 
 *{
     padding: 0;
@@ -72,11 +67,12 @@ input:checked + .button::before{
     animation-name: toggle;
     animation-duration: 0.8s;
     transition-delay: 0.2s;
-    
+
 }
 input{
     display: none;
 }
+
 @keyframes toggle{
     0%{
         width: 90px;
@@ -101,5 +97,3 @@ input{
         width: 90px;
         height: 90px;
     }
-
-}
