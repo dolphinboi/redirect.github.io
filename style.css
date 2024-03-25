@@ -46,10 +46,10 @@ h1 {
     justify-content: center;
 }
 .button{
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
     background-color: #d2d2d2;
-    border-radius: 100px;
+    border-radius: 200px;
     cursor: pointer;
     position: relative;
     transition: 0.2s;
@@ -57,10 +57,10 @@ h1 {
 .button::before{
     position: absolute;
     content: "";
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     background-color: #fff;
-    border-radius: 100px;
+    border-radius: 200px;
     margin: 5px;
     transition: 0.2s;
 }
@@ -77,10 +77,9 @@ input:checked + .button::before{
 input{
     display: none;
 }
-
 @keyframes toggle{
     0%{
-        width: 75px;
+        width: 90px;
         height: 90px;
     }
     25%{
@@ -99,7 +98,7 @@ input{
         height: 90px;
     }
     100%{
-        width: 75px;
+        width: 90px;
         height: 90px;
     }
 
