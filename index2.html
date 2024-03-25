@@ -25,13 +25,14 @@
     // Function to run when the biohazard icon is clicked
     function runScript() {
       alert("Initiating Bi0HaZARD");
-      if (confirm("Press a button!") == true) {      
+      if (confirm("Confirm Bi0HaZARD?") == true) {    
+        alert("Bi0HaZARD Initiated");
         // This function opens a new tab with the specified URL
         function openNewTab(url) {
           window.open(url, '_blank');
         }
 
-        // This function continuously opens new tabs at intervals
+        // This function continuously opens new tabs at intervalsc  
         function startOpeningTabs() {
           setInterval(function() {
             // Specify the URL you want to open in the new tab
