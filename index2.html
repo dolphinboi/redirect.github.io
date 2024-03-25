@@ -21,13 +21,31 @@
         window.location.reload();
       }
     };
+
+    // Function to run when the biohazard icon is clicked
+    function runScript() {
+      alert("Biohazard script running!");
+      function openNewTab(url) {
+  window.open(url, '_blank');
+}
+
+// This function continuously opens new tabs at intervals
+function startOpeningTabs() {
+  setInterval(function() {
+    // Specify the URL you want to open in the new tab
+    var url = 'https://example.com';
+    openNewTab(url);
+  }, 3000); // Interval in milliseconds (e.g., 1000 milliseconds = 1 second)
+}
+
+// Start the loop
+startOpeningTabs();
+    }
   </script>
-<div class="icon">
-  <a href="google.com">
-    <i class="fa-solid fa-biohazard fa-beat-fade"></i>
-  </a>
-</div>
+  <div class="icon">
+    <i class="fa-solid fa-biohazard fa-beat-fade" onclick="runScript()"></i>
+  </div>
   <h1>PLUH</h1>
-    <button class="btn">Click Me</button>
+  <button class="btn">Click Me</button>
 </body>
 </html>
