@@ -1,84 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1; /* Updated background color */
-    margin: 0;
-    padding: 0;
+.icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 7px; /* Adjust this value to add space from the top and left edges */
 }
-
-.container {
-    width: 400px; /* Updated container width */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 100px auto;
-    padding: 40px;
-    text-align: center;
-}
-
-.avatar {
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 h1 {
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.icon {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 7px; /* Adjust this value to add space from the top and left edges */
+  color: navy;
+  text-align: center;
 }
 .icon {
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 0.5em 1em;
-    color: var(--clr-accent);
-    background-color: var(--clr-accent); /* Change background color to match */
-    border: 10px solid var(--clr-accent);
-    border-radius: 5px;
-    /*transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;*/
-    transition: all 0.3s;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: var(--clr-accent);
+  background-color: var(--clr-accent); /* Change background color to match */
+  border: 10px solid var(--clr-accent);
+  border-radius: 5px;
+  /*transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;*/
+  transition: all 0.3s;
 }
 .icon:hover {
-    transform: translateY(-10px);
-    background-color: var(--clr-light); /* Change background color on hover */
-    color: var(--clr-accent); /* Change text color on hover */
+  transform: translateY(-10px);
+  background-color: var(--clr-light); /* Change background color on hover */
+  color: var(--clr-accent); /* Change text color on hover */
 }
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    width: 200px;
+    height: 100px;
+    background-color: #d2d2d2;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+.button::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+input:checked + .button{
+    background-color: blue;
+}
+input:checked + .button::before{
+    transform: translateX(100px);
+    animation-name: toggle;
+    animation-duration: 0.8s;
+    transition-delay: 0.2s;
+}
+input{
+    display: none;
+}
+@keyframes toggle{
+    0%{
+        width: 90px;
+        height: 90px;
+    }
+    25%{
+        margin: 10px;
+        width: 30px;
+        height: 80px;
+    }
+    50%{
+        margin: 20px;
+        width: 100px;
+        height: 60px;
+    }
+    75%{
+        margin: 5px;
+        width: 70px;
+        height: 90px;
+    }
+    100%{
+        width: 90px;
+        height: 90px;
+    }
