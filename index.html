@@ -1,48 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Include the external stylesheet -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1; /* Updated background color */
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Set background color to white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+</style>
 </head>
 <body>
 
-<div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1>Login</h1>
-    <form action="/action_page.php" method="post">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter Username" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter Password" required>
-        </div>
-        <button type="submit">Login</button>
-    </form>
-</div>
-
 <script>
-    var correctPassword = String.fromCharCode(79, 86, 77, 83);
-    <!-- Pluh -->
-    var password = prompt("Please enter your password:");
-    if (password === correctPassword) {
-        window.location.href = "index2.html";
-        document.documentElement.requestFullscreen();
-    } else {
-        close();
-    }
+var correctPassword = String.fromCharCode(90, 104, 97, 111);
+<!-- Pluh -->
+var password = prompt("Please enter your password:");
+if (password === correctPassword) {
+  window.location.href = "index2.html";
+  document.documentElement.requestFullscreen();
+} else {
+  window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
+}
 </script>
-
 </body>
 </html>
