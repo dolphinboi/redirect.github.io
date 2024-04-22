@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-   <a href="https://www.google.com" target=_blank title="This takes you to Google">
-    Google
+   <a href="https://dolphinboi.github.io/redirectDB/" target=_blank title=">:D">
+    Website
     </a>
 </html>
