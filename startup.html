@@ -1,46 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Set background color to white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+</style>
 </head>
-
 <body>
-  <button>Fullscreen</button>
-  <script>
-    function runScript() {
-      var urlObj = new window.URL(window.location.href);
-      var url = "https://dolphinboi.github.io/redirectDB/";
-      if (url) {
-        var win;
 
-        function openFullscreen() {
-          if (win) {
-            win.focus();
-          } else {
-            win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-          }
-          document.querySelector('button').style.background = 'grey'; // Fixed typo
-          document.querySelector('button').innerHTML = "?";
-          // Attempt to close the original window
-          window.close();
-        }
-
-        openFullscreen();
-      }
-    }
-
-    // Call the function when the page loads
-    window.onload = runScript;
-  </script>
+<script>
+var correctPassword = String.fromCharCode(90, 104, 97, 111);
+<!-- Pluh -->
+var password = prompt("Please enter your password:");
+if (password === correctPassword) {
+  window.location.href = "index2.html";
+  document.documentElement.requestFullscreen();
+} else {
+  window.location.href = "https://www.youtube.com/watch?v=OyDyOweu-PA";
+}
+</script>
 </body>
-
 </html>
