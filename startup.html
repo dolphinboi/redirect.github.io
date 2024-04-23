@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Set background color to white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+</style>
+</head>
+<body>
+
+<script>
+var correctPassword = String.fromCharCode(90, 104, 97, 111);
+<!-- Pluh -->
+var password = prompt("Please enter your password:");
+if (password === correctPassword) {
+  window.location.href = "websitemain.html";
+  document.documentElement.requestFullscreen();
+} else {
+  window.location.href = "https://i.natgeofe.com/n/b677ee83-04f3-4198-9cff-2cf399ac2df9/common-bottlenose-dolphin_3x2.jpg?w=1436&h=958";
+}
+</script>
+</body>
+</html>
