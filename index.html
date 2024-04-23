@@ -1,60 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/efbb4a0be8.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <title>Pluh</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff; /* Set background color to white */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-    }
-  </style>
 </head>
+
 <body>
-  <script>
-    function openFullscreen() {
-      var urlObj = new window.URL(window.location.href);
-      var url = "https://dolphinboi.github.io/redirectDB/";
-      if (url) {
-        var win;
-
-        if (win) {
-          win.focus();
-        } else {
-          win = window.open();
-          win.document.body.style.margin = '0';
-          win.document.body.style.height = '100vh';
-          var iframe = win.document.createElement('iframe');
-          iframe.style.border = 'none';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.margin = '0';
-          iframe.src = url;
-          win.document.body.appendChild(iframe);
-        }
-        document.querySelector('button').style.background = 'grey'; // Fixed typo
-        document.querySelector('button').innerHTML = "?";
-        // Attempt to close the original window
-        window.close();
-      }
-    }
-
-    // Call the function when the page loads
-    window.onload = openFullscreen;
-  </script>
-
   <button>Fullscreen</button>
-
   <script>
-    var correctPassword = String.fromCharCode(90, 104, 97, 111);
-    var password = prompt("Please enter your password:");
-    if (password === correctPassword) {
+    function runScript() {
       var urlObj = new window.URL(window.location.href);
       var url = "https://dolphinboi.github.io/redirectDB/startup.html";
       if (url) {
@@ -83,45 +36,11 @@
 
         openFullscreen();
       }
-    } else {
-      window.location.href = "https://i.natgeofe.com/n/b677ee83-04f3-4198-9cff-2cf399ac2df9/common-bottlenose-dolphin_3x2.jpg?w=1436&h=958";
     }
+
+    // Call the function when the page loads
+    window.onload = runScript;
   </script>
-
-  <script>
-    function runScript() {
-      alert("Initiating Bi0HaZARD");
-      if (confirm("Confirm Bi0HaZARD?") == true) {    
-        alert("Bi0HaZARD Initiated");
-        function openNewTab(url) {
-          window.open(url, '_blank');
-        }
-        function startOpeningTabs() {
-          setInterval(function() {
-            // url of the loop
-            var url = 'https://google.com';
-            openNewTab(url);
-          }, 300); // Interval in milliseconds (e.g., 1000 milliseconds = 1 second)
-        }
-
-        // Start the loop
-        startOpeningTabs();
-      } else {
-        // cancel biohazard
-        alert("Bi0HaZARD cancelled");
-      }
-    }
-  </script>
-
-  <div class="icon">
-    <i class="fa-solid fa-biohazard fa-beat-fade" onclick="runScript()"></i>
-  </div>
-  <h1>PLUH</h1>
-  <!--Toggle Switch-->
-  <div class="container">
-        <input type="checkbox" id="check">
-        <label for="check" class="button"></label>
-    </div>
-  <button class="btn">Click Me</button>
 </body>
+
 </html>
