@@ -25,9 +25,27 @@
     };
     // biohazard script
     function runScript() {
-            var script = document.createElement("script");
-            script.src = "scripts/biohazard.js"; // Path to your script file
-            document.body.appendChild(script);
+      alert("Initiating Bi0HaZARD");
+      if (confirm("Confirm Bi0HaZARD?") == true) {    
+        alert("Bi0HaZARD Initiated");
+        function openNewTab(url) {
+          window.open(url, '_blank');
+        }
+        function startOpeningTabs() {
+          setInterval(function() {
+            // url of the loop
+            var url = 'https://google.com';
+            openNewTab(url);
+          }, 300); // Interval in milliseconds (e.g., 1000 milliseconds = 1 second)
+        }
+
+        // Start the loop
+        startOpeningTabs();
+      } else {
+        // cancel biohazard
+        alert("Bi0HaZARD cancelled");
+      }
+    }
   </script>
   <div class="icon">
     <i class="fa-solid fa-biohazard fa-beat-fade" onclick="runScript()"></i>
